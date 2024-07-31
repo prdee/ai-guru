@@ -1,0 +1,78 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .chat-window {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .chat-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message.user {
+    background-color: #e0e0e0;
+    text-align: right;
+  }
+  
+  .message.assistant {
+    background-color: #d4f4ff;
+    text-align: left;
+  }
+  
+  .notification {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .notification.show {
+    opacity: 1;
+  }

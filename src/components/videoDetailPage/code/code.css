@@ -1,0 +1,46 @@
+.code-display {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    /* padding: 1em; */
+    border-radius: 5px;
+    overflow: hidden; /* Disable scrolling */
+     /* Preserve whitespace */
+     white-space: pre;
+    position: relative;
+  }
+  
+  .code-display pre {
+    /* margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: hidden;
+    width: 100%; */
+    /* animation: an 10s; */
+    /* white-space: pre-wrap; */
+    animation: scrollAnimation 20s linear infinite;
+    /* code{
+      animation: scrollAnimation 20s linear infinite;
+    } */
+    
+    /* scroll-behavior: smooth; */
+    /* steps(40, end) */
+  }
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  

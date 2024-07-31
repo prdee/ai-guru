@@ -1,0 +1,35 @@
+.animated-text-top-middle{
+    top: 2%;
+}
+
+.animated-text-bottom-middle{
+    bottom: 2%;
+}
+
+.animated-text-middle-right{
+    right: 2%;
+}
+
+.animated-text-middle-left{
+    left: 2%;
+}
+
+.animated-text-bottom-right{
+    right: 2%;
+    bottom: 2%;
+}
+
+.animated-text-top-right{
+    top: 2%;
+    right: 2%;
+}
+
+.animated-text-bottom-left{
+    left: 2%;
+    bottom: 2%
+}
+
+.animated-text-top-left{
+    left: 2%;
+    top: 2%
+}

@@ -1,0 +1,20 @@
+.animated-board .scene {
+    opacity: 0; /* Initial state for fade effect */
+    transition: opacity 0.5s ease-in-out; /* Fade transition */
+  }
+  
+  .animated-board .scene.slide-left {
+    transform: translateX(-100%); /* Initial state for slide-left effect */
+    transition: transform 0.5s ease-in-out; /* Slide transition */
+  }
+  
+  .animated-board .scene.slide-right {
+    transform: translateX(100%); /* Initial state for slide-right effect */
+    transition: transform 0.5s ease-in-out; /* Slide transition */
+  }
+  
+  .animated-board .scene.active {
+    opacity: 1; /* Final state for fade effect */
+    transform: translateX(0); /* Final state for slide effects */
+  }
+  
